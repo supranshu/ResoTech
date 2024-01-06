@@ -1,0 +1,32 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <mat-card>
+                    <mat-card-content>
+                        <h2>Login Here!!</h2>
+                        <form class="example-form" (ngSubmit)="login()">
+                            <mat-form-field >
+                              <mat-label>Username</mat-label>
+                              <input 
+                              [(ngModel)]="loginData.username"
+                              name="username"
+                              type="text" matInput placeholder="e.g:user123">
+                            </mat-form-field> <br>
+                            <mat-form-field >
+                              <mat-label>Password</mat-label>
+                              <input
+                              [(ngModel)]="loginData.password"
+                              name="password" 
+                              type="password" matInput placeholder="e.g:user123">
+                              
+                            </mat-form-field><br>
+                            <button type="submit" mat-raised-button color="accent" > Login</button> <br> <br>
+                           
+                          </form>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>
